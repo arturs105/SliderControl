@@ -96,6 +96,7 @@ public struct SliderControlView<T: BinaryFloatingPoint>: UIViewRepresentable {
         uiView.defaultProgressColor = defaultProgressColor
         uiView.enlargedTrackColor = enlargedTrackColor
         uiView.enlargedProgressColor = enlargedProgressColor
+        control.valueRange = Float(valueRange.lowerBound)...Float(valueRange.upperBound)
     }
 }
 
